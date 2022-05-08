@@ -3,5 +3,5 @@ A walk through of multi object detection with the Tensorflow object detection AP
 
 <div>
  <span align="left">
-  <img width="1200" heigt="700" src="https://github.com/Nnamaka/multi-object-detection-with-tf/blob/main/image.jpg">
+  <img width="1200" heigt="500" src="https://github.com/Nnamaka/multi-object-detection-with-tf/blob/main/image.jpg">
 </span>
