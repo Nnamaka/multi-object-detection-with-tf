@@ -20,7 +20,8 @@ A walk through of multi object detection with the Tensorflow object detection AP
 
  
  
- ##Steps
+ ## Steps
+ <b>Step 1.</b>
  Install <a href="https://github.com/tzutalin/labelImg">labellimg</a> for annotating your image datatset in the pascalVOC format
  <pre>
  pip3 install labelImg
