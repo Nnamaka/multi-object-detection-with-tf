@@ -12,5 +12,5 @@ A walk through of multi object detection with the Tensorflow object detection AP
  My images were saved in the pascalVOC format which is an acceptable format for object detection when using the TFOD API.
 
  <p align="center">
-  <img src="https://github.com/Nnamaka/super_resolution/blob/main/files/steps.gif">
+  <img src="https://github.com/Nnamaka/multi-object-detection-with-tf/blob/main/annotate%20(2).gif">
 </p>
