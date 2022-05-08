@@ -1,9 +1,9 @@
-# multi-object-detection-with-tf
+# Multi-Object-Detection-with-tf(Tensorflow)
 A walk through of multi object detection with the Tensorflow object detection API on colab
 
 <div>
  <span align="left">
-  <img width="300" heigt="300" src="https://github.com/Nnamaka/multi-object-detection-with-tf/blob/main/image.jpg">
+  <img width="600" heigt="300" src="https://github.com/Nnamaka/multi-object-detection-with-tf/blob/main/catdog.png">
 </span>
 
  For this project, I will be detecting hand gestures for 'livelong', 'thumbsup', 'thumbsdown', 'thankyou'.
