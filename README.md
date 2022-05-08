@@ -60,36 +60,29 @@ A walk through of multi object detection with the Tensorflow object detection AP
  </pre>
  
  
-Install the TFOD API
-<pre>
-import wget
-if os.name=='posix':  
-    !apt-get install protobuf-compiler
-    !cd Tensorflow/models/research && protoc object_detection/protos/*.proto --python_out=. && cp object_detection/packages/tf2/setup.py . && python -m pip install . 
-    
-if os.name=='nt':
-    url="https://github.com/protocolbuffers/protobuf/releases/download/v3.15.6/protoc-3.15.6-win64.zip"
-    wget.download(url)
-    !move protoc-3.15.6-win64.zip {paths['PROTOC_PATH']}
-    !cd {paths['PROTOC_PATH']} && tar -xf protoc-3.15.6-win64.zip
-    os.environ['PATH'] += os.pathsep + os.path.abspath(os.path.join(paths['PROTOC_PATH'], 'bin'))   
-    !cd Tensorflow/models/research && protoc object_detection/protos/*.proto --python_out=. && copy object_detection\\packages\\tf2\\setup.py setup.py && python    setup.py build && python setup.py install
-    !cd Tensorflow/models/research/slim && pip install -e . 
- </pre>
- 
- `nt` refers to windows while `posix` is for linux based system
- 
+Next is to Install the TFOD API.
+
  
   <b>Step 3.</b>
  
  Create Label map
+ 
+ 
+ <b>Step 4.</b>
+ 
+ Create TF records
+ 
+ 
+  <b>Step 5.</b>
+ Copy Model config to Training folder
+ 
+ 
+  <b>Step 6.</b>
+ Update config file for Transfer Learning
+ 
+ 
+  <b>Step 7.</b>
+ Now train The Model 
  <pre>
- labels = [{'name':'ThumbsUp', 'id':1}, {'name':'ThumbsDown', 'id':2}, {'name':'ThankYou', 'id':3}, {'name':'LiveLong', 'id':4}]
-
-with open(files['LABELMAP'], 'w') as f:
-    for label in labels:
-        f.write('item { \n')
-        f.write('\tname:\'{}\'\n'.format(label['name']))
-        f.write('\tid:{}\n'.format(label['id']))
-        f.write('}\n')
+ TRAINING_SCRIPT = os.path.join(paths['APIMODEL_PATH'], 'research', 'object_detection', 'model_main_tf2.py')
  </pre>
