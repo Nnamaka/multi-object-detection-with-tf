@@ -64,13 +64,11 @@ Next is to Install the TFOD API.
 
  
   <b>Step 3.</b>
- 
  Create Label map
  
  
  <b>Step 4.</b>
- 
- Create TF records
+  Create TF records
  
  
   <b>Step 5.</b>
@@ -86,3 +84,9 @@ Next is to Install the TFOD API.
  <pre>
  TRAINING_SCRIPT = os.path.join(paths['APIMODEL_PATH'], 'research', 'object_detection', 'model_main_tf2.py')
  </pre>
+
+ ## Acknowledgement
+ 
+ <a href="https://github.com/nicknochnack"> Nicholas Renotte </a>
+ 
+ 
