@@ -9,7 +9,7 @@ A walk through of multi object detection with the Tensorflow object detection AP
 
  #
  For this project, I will be detecting hand gestures for <b>'livelong'</b>, <b>'thumbsup</b>', <b>'thumbsdown'</b>, <b>'thankyou'</b>.
- Prior to the beginning of this project, I had collected and preannoted my image dataset. 
+ Prior to the beginning of this project, I had collected and pre-annoted my image dataset. 
  I used the <a href="https://github.com/tzutalin/labelImg">labellimg</a> tool to label and annotate my images.
  My images were saved in the pascalVOC format which is an acceptable format for object detection when using the TFOD API.
 
