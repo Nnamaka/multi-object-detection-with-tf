@@ -34,7 +34,7 @@ if not os.path.exists(LABELING_PATH):
     !git clone https://github.com/tzutalin/labelImg {LABELING_PATH}
  </pre>
 Then we run the following command. 
- <p><i><b>NOTE</b>: see more details about installation procedure on <a href="https://github.com/tzutalin/labelImg">labellimg</a> for you platform</i></p>
+ <p><i><b>NOTE</b>: see more details about installation procedure on <a href="https://github.com/tzutalin/labelImg">labellimg</a> for your platform</i></p>
  <pre>
  pip3 install pyqt5 lxml
  make qt5py3
