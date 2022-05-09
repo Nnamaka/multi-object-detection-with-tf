@@ -27,18 +27,19 @@ A walk through of multi object detection with the Tensorflow object detection AP
  
  Install <a href="https://github.com/tzutalin/labelImg">labellimg</a> for annotating your image datatset in the pascalVOC format.
  comprehensive information about labellimg is on there github Repository.
- we clone the repo
+ <p>We clone the repo</p>
  <pre>
 if not os.path.exists(LABELING_PATH):
     !mkdir {LABELING_PATH}
     !git clone https://github.com/tzutalin/labelImg {LABELING_PATH}
  </pre>
-Then we 
+Then we run the following command. 
+ <p><i><b>NOTE</b>: see more details about installation procedure on <a href="https://github.com/tzutalin/labelImg">labellimg</a> for you platform</i></p>
  <pre>
  pip3 install pyqt5 lxml
  make qt5py3
-python3 labelImg.py
-python3 labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
+ python3 labelImg.py
+ python3 labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
  </pre>
  <b>Step 2.</b>
  
